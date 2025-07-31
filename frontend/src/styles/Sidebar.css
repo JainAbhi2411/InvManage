@@ -1,0 +1,70 @@
+/* Sidebar.css */
+
+.sidebar {
+  width: 220px;
+  background-color: #1e1e2f;
+  color: #fff;
+  height: 100vh;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  position:sticky;
+}
+
+.sidebar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  margin: 1rem 0;
+}
+
+.sidebar nav ul li a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  display: block;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.sidebar nav ul li a:hover,
+.sidebar nav ul li a.active-link {
+  background-color: #3a3a5d;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 60px;
+    padding: 0.5rem;
+  }
+
+  .sidebar .logo {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .sidebar nav ul li a {
+    font-size: 0.9rem;
+    padding: 0.3rem;
+    text-align: center;
+  }
+
+  .sidebar nav ul li a::after {
+    content: '';
+  }
+}
